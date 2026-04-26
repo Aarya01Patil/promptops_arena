@@ -10,7 +10,21 @@ from __future__ import annotations
 
 from typing import Any, Dict, List, Optional
 
-from openenv.core.env_server import Action, Observation, State
+try:
+    from openenv.core.env_server import Action, Observation, State  # type: ignore
+except Exception:  # pragma: no cover - shim for envs where openenv-core layout differs
+    from pydantic import BaseModel
+
+    class Action(BaseModel):  # type: ignore[no-redef]
+        pass
+
+    class Observation(BaseModel):  # type: ignore[no-redef]
+        done: bool = False
+        reward: float = 0.0
+
+    class State(BaseModel):  # type: ignore[no-redef]
+        pass
+
 from pydantic import Field
 
 

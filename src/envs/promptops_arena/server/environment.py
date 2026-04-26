@@ -13,7 +13,14 @@ import random
 import uuid
 from typing import Any, Optional
 
-from openenv.core.env_server import Environment
+try:
+    from openenv.core.env_server import Environment  # type: ignore
+except Exception:  # pragma: no cover - shim for older openenv-core
+    class Environment:  # type: ignore[no-redef]
+        """Minimal base shim used when openenv-core lacks env_server."""
+
+        def __init__(self, *args, **kwargs) -> None:
+            pass
 
 from ..models import PromptOpsAction, PromptOpsObservation, PromptOpsState
 from ..tasks import load_tasks
