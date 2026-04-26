@@ -95,12 +95,16 @@ def run_prompt(task_id: str, system_prompt: str) -> Tuple[str, str, str]:
 
 def load_reward_curve_image() -> str | None:
     p = Path(__file__).resolve().parent / "docs" / "reward_curve.png"
-    return str(p) if p.exists() else None
+    exists = p.exists()
+    print(f"[app] reward_curve.png path={p} exists={exists}")
+    return str(p) if exists else None
 
 
 def load_comparison_image() -> str | None:
     p = Path(__file__).resolve().parent / "docs" / "baseline_comparison.png"
-    return str(p) if p.exists() else None
+    exists = p.exists()
+    print(f"[app] baseline_comparison.png path={p} exists={exists}")
+    return str(p) if exists else None
 
 
 def load_comparison_table() -> str:
@@ -187,7 +191,7 @@ with gr.Blocks(title="PromptOps Arena", theme=gr.themes.Soft()) as demo:
         gr.Markdown("### GRPO training reward curve\n"
                     "Each point is the env's total reward for one rollout during training.")
         rc_img = gr.Image(value=load_reward_curve_image(), label="reward_curve.png",
-                          interactive=False, show_label=False)
+                          type="filepath", interactive=False, show_label=False)
         gr.Markdown(
             "_If this is empty, training hasn't been run yet or `docs/reward_curve.png` "
             "is missing. Run `scripts/plot_results.py` after training._"
@@ -196,7 +200,7 @@ with gr.Blocks(title="PromptOps Arena", theme=gr.themes.Soft()) as demo:
     with gr.Tab("Baselines vs trained agent"):
         gr.Markdown("### Comparison on the held-out test split\n")
         cmp_img = gr.Image(value=load_comparison_image(), label="baseline_comparison.png",
-                           interactive=False, show_label=False)
+                           type="filepath", interactive=False, show_label=False)
         gr.Markdown(load_comparison_table())
 
     with gr.Tab("How it works"):
