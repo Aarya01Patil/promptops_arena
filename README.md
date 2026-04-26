@@ -21,6 +21,16 @@ short_description: RL agent that learns to write better prompts
 [![Hackathon](https://img.shields.io/badge/OpenEnv-Hackathon-blue)](https://pytorch.org/event/openenv-ai-hackathon/)
 [![Space](https://img.shields.io/badge/🤗-Space-yellow)](https://huggingface.co/spaces/Dar3devil/promptops-arena)
 [![Model](https://img.shields.io/badge/🤗-Adapter-green)](https://huggingface.co/Dar3devil/promptops-arena-agent)
+[![Dataset](https://img.shields.io/badge/🤗-Env%20Source-orange)](https://huggingface.co/datasets/Dar3devil/promptops-arena-src)
+
+## 🔗 Submission links (OpenEnv Hackathon 2026)
+
+- **Live demo (HF Space):** https://huggingface.co/spaces/Dar3devil/promptops-arena
+- **Trained adapter (HF Model):** https://huggingface.co/Dar3devil/promptops-arena-agent
+- **Environment source (HF Dataset):** https://huggingface.co/datasets/Dar3devil/promptops-arena-src
+- **Training notebook (`train_grpo.ipynb`):** https://huggingface.co/spaces/Dar3devil/promptops-arena/blob/main/notebooks/train_grpo.ipynb
+- **Blog post (`BLOG.md`):** https://huggingface.co/spaces/Dar3devil/promptops-arena/blob/main/BLOG.md
+- **GitHub mirror:** https://github.com/Aarya01Patil/promptops_arena
 
 ![Comparison](docs/baseline_comparison.png)
 
