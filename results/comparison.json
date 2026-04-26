@@ -1,0 +1,261 @@
+{
+  "policies": {
+    "zero_shot (stub)": {
+      "n": 30,
+      "correct": 0,
+      "format": 0,
+      "mean_reward": 0.0,
+      "by_type": {
+        "math": {
+          "n": 10,
+          "correct": 0,
+          "format": 0
+        },
+        "code": {
+          "n": 10,
+          "correct": 0,
+          "format": 0
+        },
+        "json": {
+          "n": 10,
+          "correct": 0,
+          "format": 0
+        }
+      },
+      "backend": "stub"
+    },
+    "cot (stub)": {
+      "n": 30,
+      "correct": 0,
+      "format": 30,
+      "mean_reward": 0.1,
+      "by_type": {
+        "math": {
+          "n": 10,
+          "correct": 0,
+          "format": 10
+        },
+        "code": {
+          "n": 10,
+          "correct": 0,
+          "format": 10
+        },
+        "json": {
+          "n": 10,
+          "correct": 0,
+          "format": 10
+        }
+      },
+      "backend": "stub"
+    },
+    "zero_shot (real LLM)": {
+      "n": 12,
+      "correct": 8,
+      "format": 7,
+      "mean_reward": 0.725,
+      "by_type": {
+        "math": {
+          "n": 4,
+          "correct": 2,
+          "format": 1
+        },
+        "code": {
+          "n": 4,
+          "correct": 2,
+          "format": 2
+        },
+        "json": {
+          "n": 4,
+          "correct": 4,
+          "format": 4
+        }
+      },
+      "backend": "transformers"
+    },
+    "cot (real LLM)": {
+      "n": 12,
+      "correct": 8,
+      "format": 12,
+      "mean_reward": 0.7666666666666666,
+      "by_type": {
+        "math": {
+          "n": 4,
+          "correct": 1,
+          "format": 4
+        },
+        "code": {
+          "n": 4,
+          "correct": 3,
+          "format": 4
+        },
+        "json": {
+          "n": 4,
+          "correct": 4,
+          "format": 4
+        }
+      },
+      "backend": "transformers"
+    },
+    "trained agent (real LLM)": {
+      "n": 12,
+      "correct": 10,
+      "format": 10,
+      "mean_reward": 0.9166666666666665,
+      "by_type": {
+        "math": {
+          "n": 4,
+          "correct": 3,
+          "format": 2
+        },
+        "code": {
+          "n": 4,
+          "correct": 3,
+          "format": 4
+        },
+        "json": {
+          "n": 4,
+          "correct": 4,
+          "format": 4
+        }
+      },
+      "backend": "transformers"
+    }
+  },
+  "ranking_by_mean_reward": [
+    [
+      "trained agent (real LLM)",
+      {
+        "n": 12,
+        "correct": 10,
+        "format": 10,
+        "mean_reward": 0.9166666666666665,
+        "by_type": {
+          "math": {
+            "n": 4,
+            "correct": 3,
+            "format": 2
+          },
+          "code": {
+            "n": 4,
+            "correct": 3,
+            "format": 4
+          },
+          "json": {
+            "n": 4,
+            "correct": 4,
+            "format": 4
+          }
+        },
+        "backend": "transformers"
+      }
+    ],
+    [
+      "cot (real LLM)",
+      {
+        "n": 12,
+        "correct": 8,
+        "format": 12,
+        "mean_reward": 0.7666666666666666,
+        "by_type": {
+          "math": {
+            "n": 4,
+            "correct": 1,
+            "format": 4
+          },
+          "code": {
+            "n": 4,
+            "correct": 3,
+            "format": 4
+          },
+          "json": {
+            "n": 4,
+            "correct": 4,
+            "format": 4
+          }
+        },
+        "backend": "transformers"
+      }
+    ],
+    [
+      "zero_shot (real LLM)",
+      {
+        "n": 12,
+        "correct": 8,
+        "format": 7,
+        "mean_reward": 0.725,
+        "by_type": {
+          "math": {
+            "n": 4,
+            "correct": 2,
+            "format": 1
+          },
+          "code": {
+            "n": 4,
+            "correct": 2,
+            "format": 2
+          },
+          "json": {
+            "n": 4,
+            "correct": 4,
+            "format": 4
+          }
+        },
+        "backend": "transformers"
+      }
+    ],
+    [
+      "cot (stub)",
+      {
+        "n": 30,
+        "correct": 0,
+        "format": 30,
+        "mean_reward": 0.1,
+        "by_type": {
+          "math": {
+            "n": 10,
+            "correct": 0,
+            "format": 10
+          },
+          "code": {
+            "n": 10,
+            "correct": 0,
+            "format": 10
+          },
+          "json": {
+            "n": 10,
+            "correct": 0,
+            "format": 10
+          }
+        },
+        "backend": "stub"
+      }
+    ],
+    [
+      "zero_shot (stub)",
+      {
+        "n": 30,
+        "correct": 0,
+        "format": 0,
+        "mean_reward": 0.0,
+        "by_type": {
+          "math": {
+            "n": 10,
+            "correct": 0,
+            "format": 0
+          },
+          "code": {
+            "n": 10,
+            "correct": 0,
+            "format": 0
+          },
+          "json": {
+            "n": 10,
+            "correct": 0,
+            "format": 0
+          }
+        },
+        "backend": "stub"
+      }
+    ]
+  ]
+}

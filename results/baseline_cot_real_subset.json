@@ -1,0 +1,120 @@
+{
+  "policy": "cot",
+  "split": "test",
+  "llm_backend": "transformers",
+  "by_type": {
+    "math": {
+      "n": 2,
+      "correct": 0,
+      "format": 2
+    },
+    "code": {
+      "n": 2,
+      "correct": 2,
+      "format": 2
+    },
+    "json": {
+      "n": 2,
+      "correct": 2,
+      "format": 2
+    }
+  },
+  "overall": {
+    "n": 6,
+    "correct": 4,
+    "format": 6,
+    "mean_reward": 0.7666666666666667
+  },
+  "rows": [
+    {
+      "task_id": "math_t01",
+      "task_type": "math",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "math_t02",
+      "task_type": "math",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "code_t01",
+      "task_type": "code",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 1.1,
+      "correct": true,
+      "format_ok": true,
+      "components": {
+        "correctness": 1.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 1.1
+      }
+    },
+    {
+      "task_id": "code_t02",
+      "task_type": "code",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 1.1,
+      "correct": true,
+      "format_ok": true,
+      "components": {
+        "correctness": 1.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 1.1
+      }
+    },
+    {
+      "task_id": "json_t01",
+      "task_type": "json",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 1.1,
+      "correct": true,
+      "format_ok": true,
+      "components": {
+        "correctness": 1.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 1.1
+      }
+    },
+    {
+      "task_id": "json_t02",
+      "task_type": "json",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 1.1,
+      "correct": true,
+      "format_ok": true,
+      "components": {
+        "correctness": 1.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 1.1
+      }
+    }
+  ]
+}

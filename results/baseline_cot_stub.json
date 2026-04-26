@@ -1,0 +1,480 @@
+{
+  "policy": "cot",
+  "split": "test",
+  "llm_backend": "stub",
+  "by_type": {
+    "math": {
+      "n": 10,
+      "correct": 0,
+      "format": 10
+    },
+    "code": {
+      "n": 10,
+      "correct": 0,
+      "format": 10
+    },
+    "json": {
+      "n": 10,
+      "correct": 0,
+      "format": 10
+    }
+  },
+  "overall": {
+    "n": 30,
+    "correct": 0,
+    "format": 30,
+    "mean_reward": 0.1
+  },
+  "rows": [
+    {
+      "task_id": "math_t01",
+      "task_type": "math",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "math_t02",
+      "task_type": "math",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "math_t03",
+      "task_type": "math",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "math_t04",
+      "task_type": "math",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "math_t05",
+      "task_type": "math",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "math_t06",
+      "task_type": "math",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "math_t07",
+      "task_type": "math",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "math_t08",
+      "task_type": "math",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "math_t09",
+      "task_type": "math",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "math_t10",
+      "task_type": "math",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "code_t01",
+      "task_type": "code",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "code_t02",
+      "task_type": "code",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "code_t03",
+      "task_type": "code",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "code_t04",
+      "task_type": "code",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "code_t05",
+      "task_type": "code",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "code_t06",
+      "task_type": "code",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "code_t07",
+      "task_type": "code",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "code_t08",
+      "task_type": "code",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "code_t09",
+      "task_type": "code",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "code_t10",
+      "task_type": "code",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "json_t01",
+      "task_type": "json",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "json_t02",
+      "task_type": "json",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "json_t03",
+      "task_type": "json",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "json_t04",
+      "task_type": "json",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "json_t05",
+      "task_type": "json",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "json_t06",
+      "task_type": "json",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "json_t07",
+      "task_type": "json",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "json_t08",
+      "task_type": "json",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "json_t09",
+      "task_type": "json",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    },
+    {
+      "task_id": "json_t10",
+      "task_type": "json",
+      "policy": "cot",
+      "edit_turns": 1,
+      "final_reward": 0.1,
+      "correct": false,
+      "format_ok": true,
+      "components": {
+        "correctness": 0.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 0.1
+      }
+    }
+  ]
+}

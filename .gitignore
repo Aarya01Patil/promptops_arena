@@ -1,0 +1,30 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+.env
+.env.local
+outputs/
+wandb/
+*.log
+.pytest_cache/
+.DS_Store
+*.egg-info/
+build/
+dist/
+.ipynb_checkpoints/
+.coverage
+htmlcov/
+node_modules/
+.idea/
+.vscode/
+*.swp
+# don't commit raw videos or large media
+*.mp4
+*.mov
+*.webm
+# but DO commit small gifs / pngs in docs/
+!docs/**/*.gif
+!docs/**/*.png

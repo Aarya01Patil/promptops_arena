@@ -1,0 +1,210 @@
+{
+  "policy": "zero_shot",
+  "split": "test",
+  "llm_backend": "transformers",
+  "by_type": {
+    "math": {
+      "n": 4,
+      "correct": 2,
+      "format": 1
+    },
+    "code": {
+      "n": 4,
+      "correct": 2,
+      "format": 2
+    },
+    "json": {
+      "n": 4,
+      "correct": 4,
+      "format": 4
+    }
+  },
+  "overall": {
+    "n": 12,
+    "correct": 8,
+    "format": 7,
+    "mean_reward": 0.725
+  },
+  "rows": [
+    {
+      "task_id": "math_t01",
+      "task_type": "math",
+      "policy": "zero_shot",
+      "edit_turns": 1,
+      "final_reward": 0.0,
+      "correct": false,
+      "format_ok": false,
+      "components": {
+        "correctness": 0.0,
+        "format": 0.0,
+        "brevity": -0.0,
+        "total": 0.0
+      }
+    },
+    {
+      "task_id": "math_t02",
+      "task_type": "math",
+      "policy": "zero_shot",
+      "edit_turns": 1,
+      "final_reward": 1.0,
+      "correct": true,
+      "format_ok": false,
+      "components": {
+        "correctness": 1.0,
+        "format": 0.0,
+        "brevity": -0.0,
+        "total": 1.0
+      }
+    },
+    {
+      "task_id": "math_t03",
+      "task_type": "math",
+      "policy": "zero_shot",
+      "edit_turns": 1,
+      "final_reward": 0.0,
+      "correct": false,
+      "format_ok": false,
+      "components": {
+        "correctness": 0.0,
+        "format": 0.0,
+        "brevity": -0.0,
+        "total": 0.0
+      }
+    },
+    {
+      "task_id": "math_t04",
+      "task_type": "math",
+      "policy": "zero_shot",
+      "edit_turns": 1,
+      "final_reward": 1.1,
+      "correct": true,
+      "format_ok": true,
+      "components": {
+        "correctness": 1.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 1.1
+      }
+    },
+    {
+      "task_id": "code_t01",
+      "task_type": "code",
+      "policy": "zero_shot",
+      "edit_turns": 1,
+      "final_reward": 1.1,
+      "correct": true,
+      "format_ok": true,
+      "components": {
+        "correctness": 1.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 1.1
+      }
+    },
+    {
+      "task_id": "code_t02",
+      "task_type": "code",
+      "policy": "zero_shot",
+      "edit_turns": 1,
+      "final_reward": 0.0,
+      "correct": false,
+      "format_ok": false,
+      "components": {
+        "correctness": 0.0,
+        "format": 0.0,
+        "brevity": -0.0,
+        "total": 0.0
+      }
+    },
+    {
+      "task_id": "code_t03",
+      "task_type": "code",
+      "policy": "zero_shot",
+      "edit_turns": 1,
+      "final_reward": 0.0,
+      "correct": false,
+      "format_ok": false,
+      "components": {
+        "correctness": 0.0,
+        "format": 0.0,
+        "brevity": -0.0,
+        "total": 0.0
+      }
+    },
+    {
+      "task_id": "code_t04",
+      "task_type": "code",
+      "policy": "zero_shot",
+      "edit_turns": 1,
+      "final_reward": 1.1,
+      "correct": true,
+      "format_ok": true,
+      "components": {
+        "correctness": 1.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 1.1
+      }
+    },
+    {
+      "task_id": "json_t01",
+      "task_type": "json",
+      "policy": "zero_shot",
+      "edit_turns": 1,
+      "final_reward": 1.1,
+      "correct": true,
+      "format_ok": true,
+      "components": {
+        "correctness": 1.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 1.1
+      }
+    },
+    {
+      "task_id": "json_t02",
+      "task_type": "json",
+      "policy": "zero_shot",
+      "edit_turns": 1,
+      "final_reward": 1.1,
+      "correct": true,
+      "format_ok": true,
+      "components": {
+        "correctness": 1.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 1.1
+      }
+    },
+    {
+      "task_id": "json_t03",
+      "task_type": "json",
+      "policy": "zero_shot",
+      "edit_turns": 1,
+      "final_reward": 1.1,
+      "correct": true,
+      "format_ok": true,
+      "components": {
+        "correctness": 1.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 1.1
+      }
+    },
+    {
+      "task_id": "json_t04",
+      "task_type": "json",
+      "policy": "zero_shot",
+      "edit_turns": 1,
+      "final_reward": 1.1,
+      "correct": true,
+      "format_ok": true,
+      "components": {
+        "correctness": 1.0,
+        "format": 1.0,
+        "brevity": -0.0,
+        "total": 1.1
+      }
+    }
+  ]
+}
