@@ -93,11 +93,10 @@ def main():
 
     # ---- 2. baseline comparison ----
     files = {
-        "zero_shot (stub)": res / "baseline_zero_shot_stub.json",
-        "cot (stub)": res / "baseline_cot_stub.json",
         "zero_shot (real LLM)": res / "baseline_zero_shot_real.json",
         "cot (real LLM)": res / "baseline_cot_real.json",
-        "trained agent (real LLM)": res / "trained_agent.json",
+        "untrained 1.5B agent (real LLM, 3 turns)": res / "baseline_untrained_real.json",
+        "trained 1.5B agent (real LLM, 2 turns)": res / "trained_agent.json",
     }
     # fall back to the smaller subset files if the wider-n versions don't exist
     fallback = {

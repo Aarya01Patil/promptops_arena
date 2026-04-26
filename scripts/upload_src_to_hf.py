@@ -22,7 +22,9 @@ def main():
     ignore_patterns = [
         "**/__pycache__/**",
         "**/.pytest_cache/**",
+        ".pytest_cache/**",
         "**/.benchmarks/**",
+        ".benchmarks/**",
         ".git/**",
         ".git",
         "outputs/**",
@@ -34,9 +36,16 @@ def main():
         ".env.local",
         ".vscode/**",
         ".idea/**",
+        ".cursor/**",
+        ".codex/**",
+        ".claude/**",
+        ".agents/**",
+        "AGENTS.md",
         "wandb/**",
         "*.log",
         ".DS_Store",
+        "BLOG.md",
+        "notebooks/**",
     ]
 
     print(f"[upload] uploading {root} -> dataset {args.repo}")

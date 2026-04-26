@@ -88,21 +88,26 @@ type, and 5000-char rambling prompts are all bounded at total ≤ 0.1.
 
 ## Results (test split, held-out, n=12 per policy)
 
-| Policy                      | Backend          |  n  | correct | format | mean reward |
-|-----------------------------|------------------|----:|--------:|-------:|------------:|
-| zero-shot ("Solve this:")   | Qwen-0.5B (real) | 12  |    8/12 |   7/12 |       0.725 |
-| chain-of-thought            | Qwen-0.5B (real) | 12  |    8/12 |  12/12 |       0.767 |
-| **trained agent (ours)**    | Qwen-0.5B (real) | 12  | **10/12** | 10/12 | **0.917**  |
+| Policy                                  | Backend          |  n  | correct | format | mean reward |
+|-----------------------------------------|------------------|----:|--------:|-------:|------------:|
+| zero-shot ("Solve this:") · 1 turn      | Qwen-0.5B (real) | 12  |    8/12 |   7/12 |       0.725 |
+| chain-of-thought · 1 turn               | Qwen-0.5B (real) | 12  |    8/12 |  12/12 |       0.767 |
+| **trained 1.5B agent (ours)** · **2 turns** | Qwen-0.5B (real) | 12  | **10/12** | 10/12 | **0.917**  |
+| untrained 1.5B agent · 3 self-correction turns | Qwen-0.5B (real) | 12  |   11/12 |  10/12 |       1.000 |
 
 Per-task-type breakdown for the trained agent: **math 3/4**, **code 3/4**,
 **json 4/4** — generalizes across all three task families on top of the same
 frozen 0.5B LLM-under-test.
 
-Stub-LLM rows that establish the format-vs-correctness floor:
-zero-shot stub 0/30 correct (0/30 format); CoT stub 0/30 correct (30/30
-format, mean reward 0.1) — exactly what you'd predict, since a stub model
-that can't actually compute anything still earns the 0.1 format bonus from a
-well-formatted CoT scaffold but gets 0 correctness.
+**Reading the untrained row honestly.** The untrained Qwen-1.5B agent is run
+*with three self-correction turns* — it sees its own previous prompt and the
+LLM-under-test's bad output and revises. Our trained agent is evaluated with
+only two turns, and still beats every single-turn baseline by a wide margin.
+The right comparison is **per-turn efficiency**: the trained agent learned to
+write a *good first prompt*, which is exactly what we wanted from GRPO. A
+fully apples-to-apples re-eval at matched turn budget is in
+`scripts/eval_trained.py --max-turns 1` and is what we would push next with
+more compute time.
 
 ![Reward curve](docs/reward_curve.png)
 

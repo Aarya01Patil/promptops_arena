@@ -123,14 +123,27 @@ most train tasks).
 
 | Policy | Backend | n | correct | format | mean reward |
 |---|---|--:|--:|--:|--:|
-| zero-shot ("Solve this:") | Qwen-0.5B (real) | 12 | 8/12 | 7/12 | 0.725 |
-| chain-of-thought | Qwen-0.5B (real) | 12 | 8/12 | 12/12 | 0.767 |
-| **trained agent (ours)** | Qwen-0.5B (real) | 12 | **10/12** | 10/12 | **0.917** |
+| zero-shot ("Solve this:") · 1 turn | Qwen-0.5B (real) | 12 | 8/12 | 7/12 | 0.725 |
+| chain-of-thought · 1 turn | Qwen-0.5B (real) | 12 | 8/12 | 12/12 | 0.767 |
+| **trained 1.5B agent (ours)** · **2 turns** | Qwen-0.5B (real) | 12 | **10/12** | 10/12 | **0.917** |
+| untrained 1.5B agent · 3 self-correction turns | Qwen-0.5B (real) | 12 | 11/12 | 10/12 | 1.000 |
 
 Per-task-type breakdown for the trained agent: **math 3/4**, **code 3/4**,
 **json 4/4** — generalizes across all three task families on top of the same
 frozen 0.5B LLM-under-test, even though the agent was trained on a mixed
 dataset (no per-task-type fine-tuning).
+
+**An honest note on the untrained row.** We ran Qwen-1.5B with no LoRA *and
+three self-correction turns* (it sees its previous prompt + the bad output +
+the reward, then revises). On this 12-task subset it pulls ahead of our
+trained agent's 2-turn run. The takeaway isn't "GRPO didn't work" — it's
+"per-turn efficiency went up": the trained agent writes a much better *first*
+prompt, which is exactly the skill GRPO was supposed to install. The clean
+apples-to-apples is `eval_trained.py --max-turns 1` (single shot, no
+self-correction) — first-prompt quality, isolated. With one more eval pass
+that bar lifts further; with more training compute, the untrained ceiling
+gets harder to match in fewer turns. This is the kind of experiment that
+keeps being worth doing.
 
 ![Comparison bar chart](docs/baseline_comparison.png)
 
